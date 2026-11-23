@@ -10,6 +10,7 @@
 		"format": "oxfmt --write .",
 		"format:check": "oxfmt --check .",
 		"fmt-lint": "oxfmt --write . && oxlint --fix .",
+		"test": "vitest",
 		"database:serve": "turso dev --db-file local.db",
 		"database:generate": "drizzle-kit generate",
 		"database:migrate": "drizzle-kit migrate",
@@ -17,11 +18,14 @@
 	},
 	"dependencies": {
 		"@libsql/client": "^0",
+		"@mantine/core": "^9.8.1",
+		"@mantine/hooks": "^9.8.1",
 		"drizzle-orm": "^1.0.0-rc.5",
 		"next": "^16",
 		"react": "^19",
 		"react-dom": "^19",
-		"server-only": "^0"
+		"server-only": "^0",
+		"zod": "^4"
 	},
 	"devDependencies": {
 		"@tailwindcss/turbopack": "^4",
@@ -34,7 +38,8 @@
 		"oxlint": "^1",
 		"oxlint-tsgolint": "^7",
 		"tailwindcss": "^4",
-		"typescript": "^7"
+		"typescript": "^7",
+		"vitest": "^5"
 	},
 	"packageManager": "pnpm@11.22.0"
 }
