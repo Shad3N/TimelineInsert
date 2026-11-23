@@ -41,7 +41,7 @@
 				"caughtErrorsIgnorePattern": "^_"
 			}
 		],
-		"unicorn/catch-error-name": ["error", { "name": "err" }],
+		"unicorn/catch-error-name": ["error", { "name": "err", "ignore": ["^error$"] }],
 		"unicorn/no-array-reverse": "error",
 		"unicorn/no-array-sort": "error",
 		"promise/avoid-new": "error",
